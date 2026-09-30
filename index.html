@@ -140,6 +140,7 @@
       footer { flex-direction: column; align-items: flex-start; }
     }
   </style>
+  <link rel="stylesheet" href="rose-reference.css?v=smoke-glass-1" />
 </head>
 <body>
 
@@ -402,9 +403,6 @@
   <!-- Private, non-production preview. The customer website remains unchanged. -->
   <div class="rose-preview-note" role="status"><span class="rose-preview-light"></span><span><b>Rose preview</b> · Not installed on the live website</span></div>
   <style>
-    /* Match the canonical Rose sandbox's inner card explicitly, rather than
-       relying on the sandbox host page's broad main selector. */
-    .wr-ai .wr-view{border:1px solid #eee;border-radius:28px;background:#fff;box-shadow:0 24px 80px rgba(20,20,20,.08)}
     .rose-preview-note{position:fixed;z-index:1000;left:18px;bottom:18px;display:flex;align-items:center;gap:9px;padding:11px 15px;border-radius:10px;background:rgba(14,19,24,.94);border:1px solid rgba(255,255,255,.2);box-shadow:0 12px 32px rgba(0,0,0,.2);color:#fff;font:500 12px/1.35 Inter,system-ui,sans-serif;backdrop-filter:blur(10px)}
     .rose-preview-note b{color:#fff}.rose-preview-light{width:8px;height:8px;border-radius:50%;background:#e8620a;box-shadow:0 0 0 3px rgba(232,98,10,.18);flex:none}
     @media(max-width:600px){.rose-preview-note{left:10px;bottom:10px;max-width:calc(100vw - 102px);font-size:10px;padding:8px 10px}}
