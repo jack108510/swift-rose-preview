@@ -59,7 +59,8 @@
     .os-item { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: white; }
     .os-div { width: 1px; height: 14px; background: rgba(255,255,255,0.3); }
 
-    section { padding: 5rem 8%; }
+    /* Keep host-page section spacing out of the real Rose widget. */
+    body > section { padding: 5rem 8%; }
     .sec-eyebrow { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.75rem; }
     .sec-eyebrow::before { content: ''; display: block; width: 20px; height: 2px; background: var(--orange); }
     .sec-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; text-transform: uppercase; color: var(--dark); line-height: 1; margin-bottom: 1rem; }
@@ -123,7 +124,7 @@
     @media (max-width: 860px) {
       nav .nav-links { display: none; }
       .nav-mobile-cta { display: inline-block !important; }
-      section { padding: 4rem 6%; }
+      body > section { padding: 4rem 6%; }
       #about { grid-template-columns: 1fr; }
       .about-img img { min-height: 260px; height: 260px; }
       .about-body { padding: 3rem 6%; }
