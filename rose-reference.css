@@ -104,3 +104,19 @@
 .wr-ai .wr-status { min-height: 32px; line-height: 32px; }
 .wr-ai .wr-note { min-height: 38px; display: flex; align-items: center; justify-content: center; }
 @media(prefers-reduced-motion:reduce) { .wr-ai .wr-view .wr-orb.speaking:after { animation: none; opacity: .12; } }
+
+/* Mobile: lighter, nearly opaque warm glass so the host site does not muddy text. */
+@media (max-width:520px) {
+  .wr-ai .wr-panel {
+    background: linear-gradient(145deg, rgba(253,250,247,.98), rgba(244,236,229,.97) 55%, rgba(239,225,214,.97));
+    border-color: rgba(255,255,255,.94);
+    box-shadow: 0 16px 42px rgba(39,24,17,.20), inset 0 1px 0 rgba(255,255,255,.95);
+  }
+  .wr-ai .wr-panel:before {
+    background: radial-gradient(ellipse at 8% 0%, rgba(255,255,255,.28), transparent 50%);
+  }
+  .wr-ai .wr-tabs { background: rgba(222,206,193,.22); border-color: rgba(255,255,255,.8); }
+  .wr-ai .wr-tab.active { background: rgba(255,255,255,.88); }
+  .wr-ai .wr-msg.bot { background: rgba(255,255,255,.8); }
+  .wr-ai .wr-compose { background: rgba(255,255,255,.7); }
+}
