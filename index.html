@@ -401,7 +401,7 @@
   </footer>
 
   <!-- Private, non-production preview. The customer website remains unchanged. -->
-  <div class="rose-preview-note" role="status"><span class="rose-preview-light"></span><span><b>Rose preview</b> · Not installed on the live website</span></div>
+  <div class="rose-preview-note" role="status"><span class="rose-preview-light"></span><span><b>Rose guided demo</b> · Ask how to find a service or a quote</span></div>
   <style>
     .rose-preview-note{position:fixed;z-index:1000;left:18px;bottom:18px;display:flex;align-items:center;gap:9px;padding:11px 15px;border-radius:10px;background:rgba(14,19,24,.94);border:1px solid rgba(255,255,255,.2);box-shadow:0 12px 32px rgba(0,0,0,.2);color:#fff;font:500 12px/1.35 Inter,system-ui,sans-serif;backdrop-filter:blur(10px)}
     .rose-preview-note b{color:#fff}.rose-preview-light{width:8px;height:8px;border-radius:50%;background:#e8620a;box-shadow:0 0 0 3px rgba(232,98,10,.18);flex:none}
@@ -435,17 +435,19 @@
       return previewFetch(input, init);
     };
   </script>
-  <script src="https://wildroseautomations.ca/wildrose-widget-sandbox.js?v=swift-preview-20260930"
+  <script src="./wildrose-widget-client.js?v=swift-guided-2"
     data-api-base="https://wildrose-widget.wildeautomations.com"
-    data-title="Swift Site Scout"
+    data-owner-email="preview@wildroseautomations.ca"
+    data-title="Rose"
     data-business-name="Swift Line Locating"
     data-business-id="preview-swift-line-locating"
     data-website="https://swiftlocating.ca"
     data-accent="#e8620a"
     data-logo="assets/swift-locating/logo-transparent.png"
     data-subtitle="Swift Line Locating's AI front desk"
-    data-fab-subtitle="Questions and locate requests"
+    data-fab-subtitle="Ask Rose to find something"
     data-default-view="chat"
+    data-open-on-load="true"
     data-greeting="Hi! I'm Swift Site Scout, Swift Line Locating's AI receptionist. This is a demo, so nothing will be sent. I can answer questions and take you through a locate inquiry right here. What can I help you with?"
     data-placeholder="Ask about utility locates…"
     data-fallback-url="https://swiftlocating.ca/#contact"
