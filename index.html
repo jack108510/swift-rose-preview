@@ -162,7 +162,7 @@
       <p>Swift Line Locating provides professional, accurate underground utility locating services across Alberta — keeping your crew safe and your project on schedule.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn-orange">Get a Quote</a>
-        <a href="#services" class="btn-ghost">Our Services</a>
+        <a href="#services" class="btn-ghost" data-rose-guide="swift_services" data-rose-guide-route="quote request locate" data-rose-guide-next="services-quote">Our Services</a>
       </div>
       <div class="hero-trust">
         <div class="trust-item"><div class="trust-dot"></div>SECOR Approved</div>
@@ -232,6 +232,7 @@
         <p class="svc-desc">End-to-end project coordination for utility locating needs — managing timelines, stakeholder communication, and documentation from start to finish.</p>
       </div>
     </div>
+    <div style="margin-top:34px;text-align:center"><a id="services-quote" href="#contact" class="btn-orange" data-rose-guide="swift_request" data-rose-guide-next="cf-submit">Request a Locate</a></div>
   </section>
 
 
@@ -325,7 +326,7 @@
         </div>
         <div class="fg"><label for="cf-details">Site Address / Details</label><textarea id="cf-details" name="details" placeholder="Project location, scope, and preferred date…"></textarea></div>
         <div class="form-honeypot" aria-hidden="true"><label for="cf-website">Leave this field blank</label><input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
-        <button class="btn-submit" id="cf-submit" type="submit">Submit Request →</button>
+        <button class="btn-submit" id="cf-submit" type="submit" data-rose-guide="swift_submit" data-rose-guide-instruction="Fill out the form, then click Submit Request.">Submit Request →</button>
         <div id="cf-status" role="status" aria-live="polite" style="margin-top:12px;font-size:0.8rem;display:none;padding:10px 14px;border-radius:4px;"></div>
       </form>
     </div>
@@ -435,7 +436,7 @@
       return previewFetch(input, init);
     };
   </script>
-  <script src="./wildrose-widget-client.js?v=swift-guided-3"
+  <script src="./wildrose-widget-client.js?v=swift-guided-4"
     data-api-base="https://wildrose-widget.wildeautomations.com"
     data-owner-email="preview@wildroseautomations.ca"
     data-title="Rose"
